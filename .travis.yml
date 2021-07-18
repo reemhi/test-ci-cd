@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t reem-test -f Dockerfile.dev .
+
+script:
+  - docker run reem-test npm run test -- --coverage
