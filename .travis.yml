@@ -15,7 +15,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "test-ci-cd"
-  env: "Testcicd-env"
+  env: "Testcicd-env-1"
   bucket_name: "elasticbeanstalk-us-east-1-283708364124"
   bucket_path: "test-ci-cd"
   on:
