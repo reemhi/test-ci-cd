@@ -23,6 +23,6 @@ RUN npm install --only=production
 
 COPY . .
 
-COPY --from=development /usr/src/app/dist ./dist
+COPY --from=0 /usr/src/app/dist ./dist
 
 CMD ["node", "dist/main"]
